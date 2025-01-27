@@ -31,14 +31,65 @@ This project provides a **Streamlit-based web application** that allows users to
   - `pandas`
   - `mols2grid`
 
-Install the dependencies with:
+## Install the dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
 
-Installation
+## Installation
 
 ### Clone this repository:
 ```bash
 git clone https://github.com/AbdullahRagheb/Drug_Discovery_autoimmune.git
 cd Drug_Discovery_autoimmune
+```
+
+## Run the application:
+```bash
+streamlit run app.py
+```
+
+## Usage
+
+1. Launch the app by running the command above.
+2. Use the sidebar sliders to adjust thresholds for molecular properties.
+3. View the filtered drug list and their molecular descriptors in the main panel.
+
+## Dataset
+
+The dataset used in this project is publicly available and can be downloaded from [here](https://raw.githubusercontent.com/AbdullahRagheb/Drug_Discovery_autoimmune/main/autoimmune_drug.txt). It includes information about FDA-approved autoimmune drugs, including their SMILES strings and generic names.
+
+## Code Highlights
+
+- **Descriptor Calculation**:  
+  Functions are provided to calculate molecular weight, LogP, number of hydrogen bond donors, and acceptors using `rdkit`.
+
+- **Filtering Logic**:  
+  Interactive filters allow users to set thresholds for drug properties, dynamically updating the displayed results.
+
+- **Visualization**:  
+  Molecules are visualized with `mols2grid`, showing images alongside calculated properties.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- **Libraries**:
+  - [Streamlit](https://streamlit.io/)
+  - [RDKit](https://www.rdkit.org/)
+  - [mols2grid](https://github.com/cbouy/mols2grid)
+
+Special thanks to the open-source community for providing tools and resources that made this project possible.

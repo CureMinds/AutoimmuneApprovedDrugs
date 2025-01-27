@@ -31,11 +31,12 @@ This project provides a **Streamlit-based web application** that allows users to
   - `pandas`
   - `mols2grid`
 
-1. Install the dependencies with:
+Install the dependencies with:
+
 ```bash
 pip install -r requirements.txt
 
-2. Installation
+Installation
 
 ### Clone this repository:
 ```bash

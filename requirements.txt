@@ -1,0 +1,5 @@
+streamlit==0.84.1
+flax
+mols2grid
+rdkit
+pandas
